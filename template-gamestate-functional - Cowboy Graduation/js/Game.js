@@ -11,7 +11,7 @@ GameStates.makeGame = function( game, shared ) {
 
     //Text vars
     var text;
-    var lives = 1;
+    var lives = 10;
     var hatCount = 0;
 
     //horseshoe vars
@@ -30,7 +30,7 @@ GameStates.makeGame = function( game, shared ) {
     function quitGame() {
 
 	//Reset lives
-        lives = 1;
+        lives = 10;
 	music.stop();
 	game.state.start('EndScreen');
     }
